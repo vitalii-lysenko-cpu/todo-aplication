@@ -21,7 +21,7 @@ private const val BASE_URL = "https://jsonplaceholder.typicode.com"
 internal interface PostApiModule {
 
     @Binds
-    fun bindApiDistrictDataSource(impl: ApiDataSourceImpl): ApiDataSource
+    fun bindApiDataSource(impl: ApiDataSourceImpl): ApiDataSource
 
     companion object {
         private lateinit var postApi: PostApi

@@ -12,5 +12,5 @@ import dagger.hilt.components.SingletonComponent
 internal interface PostDataModule {
 
     @Binds
-    fun bindDistrictRepository(impl: PostRepositoryImpl): PostRepository
+    fun bindPostRepository(impl: PostRepositoryImpl): PostRepository
 }
