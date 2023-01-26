@@ -28,7 +28,7 @@ internal interface PostApiModule {
 
         @Reusable
         @Provides
-        fun provideDistrictApi(): PostApi {
+        fun providePostApi(): PostApi {
             val httpLoggingInterceptor = HttpLoggingInterceptor()
             httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.HEADERS
 

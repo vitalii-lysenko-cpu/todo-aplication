@@ -10,5 +10,4 @@ class ApiDataSourceImpl @Inject constructor(
 
     override suspend fun getPostList(): List<Post> =
         postApi.getPostList().map { it.toEntity() }
-
 }
